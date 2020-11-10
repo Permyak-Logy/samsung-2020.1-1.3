@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/purple">
+
+    <EditText
+            android:id="@+id/valuePrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/enter_value"
+            android:inputType="text"
+            android:visibility="visible"
+            android:background="@color/black"
+            android:textColorHint="@color/white"
+    >
+
+        <requestFocus/>
+    </EditText>
+
+    <Button
+            android:id="@+id/closeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="restartUserProgram"
+            android:text="@string/restart"
+            android:background="@color/gray"
+            android:visibility="visible"
+            android:textColor="@color/white"
+    />
+
+    <TextView
+            android:id="@+id/consoleWrite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>
